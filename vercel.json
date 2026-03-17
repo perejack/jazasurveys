@@ -38,12 +38,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "VITE_SUPABASE_URL": "@supabase_url",
-    "VITE_SUPABASE_ANON_KEY": "@supabase_anon_key",
-    "VITE_SWIFTPAY_API_KEY": "@swiftpay_api_key",
-    "VITE_SWIFTPAY_API_SECRET": "@swiftpay_api_secret",
-    "VITE_SWIFTPAY_BASE_URL": "@swiftpay_base_url"
-  }
+  ]
 }
