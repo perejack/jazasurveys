@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "rm -f package-lock.json && npm install --force --legacy-peer-deps",
+  "installCommand": "npm config set legacy-peer-deps true && npm config set force true && npm ci --no-audit --no-fund",
   "framework": "vite",
   "rewrites": [
     {
