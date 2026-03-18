@@ -5,7 +5,22 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!api).*)$",
+      "source": "/api/stk-push",
+      "destination": "/api/stk-push.ts"
+    },
+    {
+      "source": "/api/payment-status",
+      "destination": "/api/payment-status.ts"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": "text/html"
+        }
+      ],
       "destination": "/index.html"
     }
   ],
