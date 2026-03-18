@@ -78,10 +78,10 @@ export class MpesaService {
         return { success: false, error: data.message };
       }
 
-      if (data.success && data.data?.checkout_id) {
-        await supabase.from('mpesa_payments').update({ checkout_request_id: data.data.checkout_id, status: 'processing' }).eq('checkout_request_id', checkoutRequestId);
+      if (data.success && data.checkoutRequestId) {
+        await supabase.from('mpesa_payments').update({ checkout_request_id: data.checkoutRequestId, status: 'processing' }).eq('checkout_request_id', checkoutRequestId);
         toast.success("STK Push sent! Check your phone and enter PIN.");
-        return { success: true, checkoutRequestId: data.data.checkout_id };
+        return { success: true, checkoutRequestId: data.checkoutRequestId };
       }
       return { success: false, error: 'Invalid response from payment gateway' };
     } catch (error: any) {
