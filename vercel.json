@@ -13,14 +13,7 @@
       "destination": "/api/payment-status.ts"
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "Accept",
-          "value": "text/html"
-        }
-      ],
+      "source": "/:path(.*)",
       "destination": "/index.html"
     }
   ],
