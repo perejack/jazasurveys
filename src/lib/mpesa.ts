@@ -134,7 +134,7 @@ export class MpesaService {
 // Category definitions
 export const SURVEY_CATEGORIES = [
   { id: 'starter', name: 'Free Starter', description: 'Complete free surveys and earn up to KSH 1,500', unlock_price: 0, earning_cap: 1500, surveys_available: 10, reward_per_survey: 150, icon: 'Gift', gradient: 'from-emerald-400 to-teal-600', is_free: true },
-  { id: 'bronze_plus', name: 'Bronze Plus', description: 'Unlock surveys earning up to KSH 1,000 more', unlock_price: 5, earning_cap: 1000, surveys_available: 8, reward_per_survey: 125, icon: 'Zap', gradient: 'from-amber-600 to-orange-500', is_free: false },
+  { id: 'bronze_plus', name: 'Bronze Plus', description: 'Unlock surveys earning up to KSH 1,000 more', unlock_price: 150, earning_cap: 1000, surveys_available: 8, reward_per_survey: 125, icon: 'Zap', gradient: 'from-amber-600 to-orange-500', is_free: false },
   { id: 'silver_plus', name: 'Silver Plus', description: 'Unlock surveys earning up to KSH 2,500 more', unlock_price: 190, earning_cap: 2500, surveys_available: 15, reward_per_survey: 167, icon: 'Award', gradient: 'from-slate-400 to-slate-600', is_free: false },
   { id: 'gold_plus', name: 'Gold Plus', description: 'Unlock surveys earning up to KSH 3,000 more', unlock_price: 200, earning_cap: 3000, surveys_available: 15, reward_per_survey: 200, icon: 'Crown', gradient: 'from-yellow-400 to-yellow-600', is_free: false },
   { id: 'platinum_plus', name: 'Platinum Plus', description: 'Unlock surveys earning up to KSH 3,500 more', unlock_price: 250, earning_cap: 3500, surveys_available: 15, reward_per_survey: 234, icon: 'Gem', gradient: 'from-cyan-400 to-blue-600', is_free: false },
